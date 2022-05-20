@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script/scripts.js" defer></script>
+        <title>Contact List</title>
+    </head>
+    <body class="body">
+        <div class="container">
+            <table class="list_block">
+                <thead class="table_head">
+                    <td>Name</td>
+                    <td>E-mail</td>
+                    <td>Phone_number</td>
+                    <td>Eidt/Delete User</td>
+                </thead>
+                <tbody class="input_blocks"></tbody>
+            </table>
+            <form class="input_block" class="form">
+                    <input class="input_elements" type="text" name="name" placeholder="Enter your name!">
+                    <input class="input_elements" type="text" name="email" placeholder="Enter your e-mail!">
+                    <input class="input_elements" type="text" name="phone" placeholder="Enter your phone_number!">
+                    <p class="error">Wrong! Empty line! Fill in all lines!</p>
+                    <button class="input_btn" type="submit">Add Contact</button>
+            </form>
+        </div>
+        <script type="text/template" class="list_template">
+            <tr class="list_elements" data-id='{{id}}'>
+                <td>{{Name}}</td>
+                <td>{{Email}}</td>
+                <td>{{Phone_number}}</td>
+                <td>
+                    <button type="button" class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete User</button>
+                </td>
+            </tr>
+        </script>
+    </body>
+</html>

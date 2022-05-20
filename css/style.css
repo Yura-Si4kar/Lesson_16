@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.body {
+    background-color: aquamarine;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 20px 0 0;
+}
+
+.list_block {
+    width: 88%;
+	border-collapse: collapse;
+}
+
+.input_block {
+    width: 88%;
+}
+
+.input_elements {
+    margin-top: 30px;
+    margin-right: 70px;
+}
+
+.table_head td,
+.input_blocks td {
+	border: 1px solid black;
+	padding: 10px;
+    text-align: center;
+}
+
+.error {
+    opacity: 0;
+    visibility: hidden;
+    color: red;
+    font-size: 32px;
+}
+
+.error.show {
+    opacity: 1;
+    visibility: visible;
+}
